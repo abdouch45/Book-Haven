@@ -1,0 +1,90 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Products list */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap items onto multiple rows */
+  }
+  
+  li {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: left;
+    width: calc(33.33% - 20px); /* Calculate width for 3 items per row with margin */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box; /* Include border in width calculation */
+    background-color: #fff; /* Light background for cards */
+  }
+  
+  /* Product details */
+  li > span {
+    margin-bottom: 5px;
+  }
+  
+  /* Delete and Edit buttons */
+  form button[type="submit"] {
+    background-color: #ccc; /* Light gray */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #ddd; /* Lighter gray on hover */
+  }
+  
+  a {
+    color: #007bff; /* Blue */
+    text-decoration: none;
+  }
+  
+  /* Add product form */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  form input {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    flex: 1; /* Make inputs flexible to adjust width */
+  }
+  
+  form button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    flex: 0 0 auto; /* Remove flexbox behavior for button */
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #45A049; /* Green darkened */
+  }
+li p{
+    margin-bottom: 0;
+}  
